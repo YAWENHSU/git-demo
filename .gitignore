@@ -1,0 +1,5 @@
+*.jpg
+.vscode/   
+
+
+#若想忽略.vscode檔案，因為它是一個目錄，需輸入".vscode/"
