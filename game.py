@@ -9,11 +9,13 @@
 
 import random
 
-low, high = 1, 50
+low, high = 1, 100
+nums = 10
 x = random.randint(low, high)
 # print(x)
-for i in range(5):
-    y = eval(input(f'請輸入一個數字{low}~{high}:'))
+count = 0
+for i in range(nums):
+    y = eval(input(f'({count+1}/{nums})請輸入一個數字{low}~{high}:'))
     if y == x:
         print('恭喜猜對')
         break
@@ -26,5 +28,6 @@ for i in range(5):
             print("猜高一點")
             if y > low:
                 low = y+1
+    count += 1
 if y != x:
     print("答案為:", x)
