@@ -20,7 +20,11 @@ for i in range(5):
     else:
         if y > x:
             print("猜低一點")
+            if y < high:
+                high = y-1
         else:
             print("猜高一點")
+            if y > low:
+                low = y+1
 if y != x:
     print("答案為:", x)
