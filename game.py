@@ -13,6 +13,8 @@ low, high = 1, 100
 nums = 10
 x = random.randint(low, high)
 # print(x)
+level=1
+print(f"歡迎來到猜數字遊戲，目前等級Level:{level}")
 count = 0
 for i in range(nums):
     y = eval(input(f'({count+1}/{nums})請輸入一個數字{low}~{high}:'))

@@ -176,21 +176,33 @@ branch建立commit後 : (HEAD -> test)
 
 github
 
-加入遠端倉庫
-    - git remote add origin https://github.com/YAWENHSU/git-demo.git
+- echo "# git-demo" >> README.md
+- git init
+- git add README.md
+- git commit -m "first commit"
+- git branch -M main
+- git remote add origin https://github.com/YAWENHSU/git-demo.git
+- git push -u origin main
 
-檢視目前連結的遠端倉庫
-    - git remote -v
 
-從本地推送至遠端(首次推送，須建立遠端分支master)
-    - git push -u origin master
-    - git push --set-upstream origin master
-    (以上兩行等義)
 
-echo "# git-demo" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/YAWENHSU/git-demo.git
-git push -u origin main
+- git remote add origin https://github.com/YAWENHSU/git-demo.git
+    - 加入遠端倉庫
+
+- git remote -v
+    - 檢視目前連結的遠端倉庫
+
+- git push -u origin master
+- git push --set-upstream origin master
+- 以上兩行等義
+    - 從本地推送至遠端(首次推送，須建立遠端分支master)
+
+- git push -f
+    - 強行從本地端推送至遠端
+
+- git clone <https://github.com/YAWENHSU/git-demo.git>
+    - 從遠端複製專案至本地端
+    - 本地端新增修改後
+        - git add .
+        - git commit -m "message"
+        - git push (確保遠端為最新版本)
