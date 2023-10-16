@@ -206,3 +206,15 @@ github
         - git add .
         - git commit -m "message"
         - git push (確保遠端為最新版本)
+
+- git pull
+    - 從遠端拉取至本地端(開啟專案的第一步)
+
+- git branch -a
+    - 檢視遠端與本地端的分支
+
+- git branch -r
+    - 檢視遠端的分支
+
+- git push --delete origin <branch-name>
+    - 刪除遠端的分支
